@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .column { float: left; }
+        .column.side { width: 25%; }
+        .column.middle { width: 50%; }
+        @media screen and (max-width: 400px) {
+            .column.side, .column.middle {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<p class="column side">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p class="column middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p class="column side">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</body>
+</html>
