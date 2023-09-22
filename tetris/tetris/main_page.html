@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+</head>
+<body>
+    <p> Игра тетрис</p>
+    <form action="game.html" method="get">
+        <label>
+            Введите имя:<br>
+            <input id="name" placeholder="Имя пользователя"><br>
+        </label>
+        <input type="submit" value="Ввод" onclick="store(document.getElementById('name'))">
+    </form>
+<script>
+    function store(source){
+        localStorage["tetris.username"] = source.value;
+    }
+</script>
+</body>
+</html>
